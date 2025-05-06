@@ -37,9 +37,14 @@ return [
 
     'guards' => [
         'web' => [
-            'driver' => 'session',
-            'provider' => 'users',
+            'driver'    => 'session',
+            'provider'  => 'users',
         ],
+        //tambahkan guard untuk API
+        'api' => [
+            'driver'    => 'passport',
+            'provider'  => 'users'
+        ]
     ],
 
     /*
